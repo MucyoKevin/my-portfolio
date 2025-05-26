@@ -13,24 +13,22 @@ import {
   Mail,
 } from "@mui/icons-material";
 
-export default function Home() {
+export default function About() {
   return (
-    <div className="bg-black px-20 py-10 min-h-screen ">
-      <div className="flex  bg-[var(--background)] text-black font-[var(--font-sans)]  border-2  rounded-xl max-h-2/3 ">
+    <div className="bg-black px-20 py-10">
+      <div className="flex min-h-screen bg-[var(--background)] text-black font-[var(--font-sans)]  border-2  rounded-xl max-h-2/3">
         {/* Left Profile Card */}
         <aside className="w-full max-w-xs bg-white/10 rounded-2xl m-4 flex flex-col items-center p-10 shadow-lg">
           <Image
-              src="/profile.jpeg"
-              alt="Profile"
-              width={250}
-              height={250}
-              className="rounded-xl object-cover mb-6"
-            />
+            src="/profile.jpeg"
+            alt="Profile"
+            width={250}
+            height={250}
+            className="rounded-xl object-cover mb-6"
+          />
           <h1 className="text-3xl font-bold mb-1">Mucyo Kevin</h1>
           <p className="text-lg font-medium mb-4">Full Stack Developer</p>
-          
           <div className="flex flex-row gap-4">
-            
             <div className="flex flex-row gap-4 mb-4">
               <a
                 href="https://github.com/MucyoKevin"
@@ -45,7 +43,6 @@ export default function Home() {
                 <Twitter />
               </a>
             </div>
-            {/* <div className="border-l-2 border-[var(--accent)] h-24 mb-4"></div> */}
           </div>
           <div className="mb-2 text-sm">mucyocyeve22@gmail.com</div>
           <div className="mb-4 text-lg font-bold">Kigali, Rwanda</div>
@@ -62,22 +59,30 @@ export default function Home() {
         <main className="flex-1 flex flex-col justify-center items-start px-16 relative">
           <div className="mb-8">
             <span className="px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-sm">
-              Introduction
+              About
             </span>
           </div>
-          <div className="mb-10">
-            <h2 className="text-4xl font-bold mb-6">
-              Hello There, I'm <span className="text-[var(--accent)]">Kevin</span>
-              ,
-              <br />
-              Full Stack Developer and
-              <br />
-              Data Analyst
-            </h2>
-            <p className="text-xl text-black/80 mb-2">
-              I code beautifully elegant simple things and I love what I do.
-              <br />
-              Just keeping things simple like that!
+          <blockquote className="text-4xl font-bold mb-8">
+            "The greater the obstacle, the more{" "}
+            <span className="text-[var(--accent)]">glory</span> in{" "}
+            <span className="text-[var(--accent)]">overcoming</span> it."
+            <span className="block text-lg font-normal mt-2 text-right">
+              -Molière
+            </span>
+          </blockquote>
+          <div className="text-lg max-w-2xl">
+            <p className="mb-4">
+              Versatile software developer with a background in
+              Telecommunication and Information Engineering, and hands-on
+              experience in both embedded and full stack development.
+            </p>
+            <p className="mb-4">
+              Proficient in JavaScript (Node.js, Express.js, React, Next.js),
+              Python (Django/Flask), C# (.NET), and SQL/NoSQL databases. Skilled
+              in designing RESTful APIs, optimizing frontend performance, and
+              deploying cloud-native solutions. Passionate about clean
+              architecture, UX-driven development, and solving business problems
+              through full stack innovation.
             </p>
           </div>
           {/* Navbar inside main, absolutely positioned at the bottom, centered, with smaller width */}
