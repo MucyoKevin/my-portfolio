@@ -31,23 +31,23 @@ const projects = [
     tags: ["Python", "Supabase"],
   },
   {
-    title: "Tesla Model S Showcase",
+    title: "Analysing and Predicting CO2 Emissions in Rwanda",
     image: "/CO2emissionvisualisation.webp",
-    description: "A showcase site for Tesla Model S with animations and modern UI.",
-    tags: ["Next.js", "Framer Motion"],
+    description: "This project analyzes RwandaCO2Emissions dataset from kaggle using Python, providing interactive visualizations and statistical analysis of CO2 emissions across Rwanda.",
+    tags: ["Python", "Colab Notebook"],
   },
   {
-    title: "BMW M4 Portfolio",
-    image: "/profile.jpeg",
-    description: "A portfolio for BMW M4 featuring interactive galleries.",
-    tags: ["React", "Tailwind"],
+    title: "A Comparative Study of ARIMA, SARIMA, and LSTM Models",
+    image: "/comparisontable.webp",
+    description: "This project demonstrated that SARIMA outperforms ARIMA and LSTM for forecasting Romania’s energy consumption.",
+    tags: ["Python", "Colab Notebook"],
   },
-  {
-    title: "Audi R8 Experience",
-    image: "/profile.jpeg",
-    description: "An immersive experience site for Audi R8.",
-    tags: ["Three.js", "React"],
-  },
+  // { 
+  //   title: "GainZone",
+  //   image: "/gainzone.webp",  
+  //   description: "A web application for managing personal finances, built with ASP.NET Core and Entity Framework Core.",
+  //   tags: ["ASP.NET Core", "C#"],
+  // },
 ];
 
 export default function Projects() {
@@ -105,12 +105,12 @@ export default function Projects() {
               Projects
             </span>
           </div>
-          <h2 className="text-5xl font-bold mb-12">
+          <h2 className="text-5xl font-bold mb-5">
             Featured <span className="text-[var(--accent)]">Projects</span>
           </h2>
           {/* Carousel */}
-          <div className="flex items-center justify-center w-full mb-12">
-            <button onClick={goLeft} className="p-2 rounded-full hover:bg-[var(--accent)]/20 transition-colors">
+          <div className="flex items-center justify-center w-full mb-12 pb-12">
+            <button onClick={goLeft} className="p-2 rounded-full hover:bg-[var(--accent)]/20 transition-colors cursor-pointer">
               <ArrowBackIosNew className="text-[var(--accent)]" />
             </button>
             <div className="mx-8 bg-white/10 rounded-2xl overflow-hidden shadow-lg w-[400px] flex flex-col items-center p-6">
@@ -134,7 +134,7 @@ export default function Projects() {
                 ))}
               </div>
             </div>
-            <button onClick={goRight} className="p-2 rounded-full hover:bg-[var(--accent)]/20 transition-colors">
+            <button onClick={goRight} className="p-2 rounded-full hover:bg-[var(--accent)]/20 transition-colors cursor-pointer">
               <ArrowForwardIos className="text-[var(--accent)]" />
             </button>
           </div>
