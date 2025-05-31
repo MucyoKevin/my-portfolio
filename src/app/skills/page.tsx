@@ -16,7 +16,7 @@ import {
 const skills = [
   { name: "HTML", percent: 90, icon: "/html-5.svg" },
   { name: "CSS", percent: 80, icon: "/css-3.svg" },
-  { name: "JAVA SCRIPT", percent: 70, icon: "/js.svg" },
+  { name: "JAVA SCRIPT", percent: 80, icon: "/js.svg" },
   { name: "PYTHON", percent: 70, icon: "/python.svg" },
   { name: "REACT", percent: 90, icon: "/react.svg" },
   // { name: "GIT", percent: 69, icon: "/git.svg" },
