@@ -49,7 +49,7 @@ export default function Resume() {
   return (
     <div className="px-4 sm:px-8 md:px-16 lg:px-20 py-6 sm:py-8 md:py-10">
       {/* Top Navbar for mobile */}
-      <nav className="lg:hidden flex items-center justify-end bg-white/10 rounded-full px-2 py-2 mb-6 shadow border border-[var(--accent)] sticky top-2 z-50 w-fit min-w-fit ml-auto">
+      <nav className="lg:hidden flex items-center justify-end bg-white/10 rounded-full px-2 py-2 mb-2 shadow border border-[var(--accent)] sticky top-2 z-50 w-fit min-w-fit ml-auto">
         <button
           className="focus:outline-none"
           onClick={() => setNavOpen((open) => !open)}

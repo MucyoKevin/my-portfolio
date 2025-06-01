@@ -116,7 +116,7 @@ export default function Home() {
           </Link>
         </aside>
         {/* Main Content */}
-        <main className="flex-1 flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 lg:px-16 relative mt-6 lg:mt-0">
+        <main className="flex-1 flex flex-col justify-center  items-start px-4 sm:px-8 md:px-12 lg:px-16 relative mt-6 lg:mt-0">
           <div className="mb-4 sm:mb-8">
             <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
               Introduction
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
           <div className="mb-6 sm:mb-10">
             <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
-              Hello There, I'm <span className="text-[var(--accent)]">Kevin</span>,<br className="hidden sm:block" />
+              Hello There, I'm <span className="text-[var(--accent)]">Kevin</span>, <br className="hidden sm:block" />
               Full Stack Developer and <br className="hidden sm:block" />
               Data Analyst
             </h2>
