@@ -122,11 +122,11 @@ export default function Contact() {
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 w-full max-w-full sm:max-w-4xl" action="mailto:mucyocyeve22@gmail.com" method="POST" encType="text/plain">
             <div className="flex flex-col gap-2">
               <label className="font-semibold">Full Name<span className="text-[var(--accent)]">*</span></label>
-              <input className="p-3 rounded bg-white/20 border border-[var(--accent)]" placeholder="Enter Your Name Here" name="Full Name" required />
+              <input className="p-3 rounded bg-white/20 border border-[var(--accent)]" placeholder="Enter Your Name Here" name="Full Name" required autoComplete="name" />
             </div>
             <div className="flex flex-col gap-2">
               <label className="font-semibold">Email<span className="text-[var(--accent)]">*</span></label>
-              <input className="p-3 rounded bg-white/20 border border-[var(--accent)]" placeholder="Enter Your Mail Here" name="Email" required type="email" />
+              <input className="p-3 rounded bg-white/20 border border-[var(--accent)]" placeholder="Enter Your Mail Here" name="Email" required type="email" autoComplete="email" />
             </div>
             <div className="flex flex-col gap-2 sm:col-span-2">
               <label className="font-semibold">Message</label>
