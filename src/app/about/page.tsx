@@ -117,14 +117,14 @@ export default function About() {
               About
             </span>
           </div>
-          <blockquote className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">
+          {/* <blockquote className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">
             "The greater the obstacle, the more{" "}
             <span className="text-[var(--accent)]">glory</span> in{" "}
             <span className="text-[var(--accent)]">overcoming</span> it."
             <span className="block text-base sm:text-lg font-normal mt-2 text-right">
               -Molière
             </span>
-          </blockquote>
+          </blockquote> */}
           <div className="text-base sm:text-lg max-w-full sm:max-w-2xl">
             <p className="mb-4">
               Versatile software developer with a background in

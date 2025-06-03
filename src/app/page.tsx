@@ -124,7 +124,7 @@ export default function Home() {
           </div>
           <div className="mb-6 sm:mb-10">
             <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
-              Hello There, I'm <span className="text-[var(--accent)]">Kevin</span>, <br className="hidden sm:block" />
+              Hello There, I am <span className="text-[var(--accent)]">Kevin</span>, <br className="hidden sm:block" />
               Full Stack Developer and <br className="hidden sm:block" />
               Data Analyst
             </h2>

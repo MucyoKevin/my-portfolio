@@ -113,7 +113,7 @@ export default function Contact() {
             <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">Contact</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-12">
-            Let's Work <span className="text-[var(--accent)]">Together</span>
+            Let us Work <span className="text-[var(--accent)]">Together</span>
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-4 sm:mb-8 gap-2 sm:gap-0">
             <div className="text-base sm:text-lg">mucyocyeve22@gmail.com</div>
