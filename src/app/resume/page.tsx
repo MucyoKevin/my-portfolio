@@ -77,7 +77,7 @@ export default function Resume() {
         {/* Left Profile Card (hidden on mobile) */}
         <aside className="hidden lg:flex w-full max-w-xs bg-white/10 rounded-2xl m-2 sm:m-4 flex-col items-center p-6 sm:p-8 lg:p-10 shadow-lg">
           <Image
-            src="/profile3.jpg"
+            src="/profile3.JPG"
             alt="Profile"
             width={250}
             height={250}

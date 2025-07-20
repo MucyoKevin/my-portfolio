@@ -77,11 +77,16 @@ export default function Home() {
         {/* Left Profile Card (hidden on mobile) */}
         <aside className="hidden lg:flex w-full max-w-xs bg-white/10 rounded-2xl m-2 sm:m-4 flex-col items-center p-6 sm:p-8 lg:p-10 shadow-lg">
           <Image
-              src="/profile3.jpg"
+              src="/profile3.JPG"
               alt="Profile"
               width={250}
               height={250}
               className="rounded-xl object-cover mb-4 sm:mb-6 w-full max-w-[200px] sm:max-w-[250px]"
+              priority
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "/profile.jpeg";
+              }}
             />
           <h1 className="text-2xl sm:text-3xl font-bold mb-1">Mucyo Kevin</h1>
           <p className="text-base sm:text-lg font-medium mb-4">Full Stack Developer</p>
@@ -91,14 +96,16 @@ export default function Home() {
             <div className="flex flex-row gap-2 sm:gap-4 mb-4">
               <a
                 href="https://github.com/MucyoKevin"
-                className="text-[var(--accent)]"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
               >
                 <GitHub />
               </a>
-              <a href="#" className="text-[var(--accent)]">
+              <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:scale-110 transition-transform">
                 <Instagram />
               </a>
-              <a href="#" className="text-[var(--accent)]">
+              <a href="https://twitter.com/your_twitter_handle" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:scale-110 transition-transform">
                 <Twitter />
               </a>
             </div>
