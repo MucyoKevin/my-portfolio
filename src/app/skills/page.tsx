@@ -16,14 +16,14 @@ import {
 import { useState } from "react";
 
 const skills = [
-  { name: "HTML", percent: 90, icon: "/html-5.svg" },
-  { name: "CSS", percent: 80, icon: "/css-3.svg" },
-  { name: "JAVA SCRIPT", percent: 80, icon: "/js.svg" },
-  { name: "PYTHON", percent: 70, icon: "/python.svg" },
+  
+  { name: "JAVA SCRIPT", percent: 90, icon: "/js.svg" },
+  { name: "PYTHON", percent: 90, icon: "/python.svg" },
   { name: "REACT", percent: 90, icon: "/react.svg" },
-  // { name: "GIT", percent: 69, icon: "/git.svg" },
-  { name: "FIGMA", percent: 70, icon: "/figma.svg" },
-  { name: "MS EXCEL", percent: 80, icon: "/ms-excel.svg" },
+  { name: "HTML", percent: 90, icon: "/html-5.svg" },
+  { name: "DJANGO", percent: 70, icon: "/django.svg" },
+  { name: "GIT", percent: 70, icon: "/git.svg" },
+  { name: "CSS", percent: 80, icon: "/css-3.svg" },
   { name: "C#", percent: 60, icon: "/csharp.svg" },
 ];
 
@@ -89,7 +89,7 @@ export default function Skills() {
         {/* Left Profile Card (hidden on mobile) */}
         <aside className="hidden lg:flex w-full max-w-xs bg-white/10 rounded-2xl m-2 sm:m-4 flex-col items-center p-6 sm:p-8 lg:p-10 shadow-lg">
           <Image
-            src="/profile.jpeg"
+            src="/profile3.jpg"
             alt="Profile"
             width={250}
             height={250}

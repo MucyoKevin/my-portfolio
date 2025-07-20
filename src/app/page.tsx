@@ -77,7 +77,7 @@ export default function Home() {
         {/* Left Profile Card (hidden on mobile) */}
         <aside className="hidden lg:flex w-full max-w-xs bg-white/10 rounded-2xl m-2 sm:m-4 flex-col items-center p-6 sm:p-8 lg:p-10 shadow-lg">
           <Image
-              src="/profile.jpeg"
+              src="/profile3.jpg"
               alt="Profile"
               width={250}
               height={250}
@@ -125,8 +125,7 @@ export default function Home() {
           <div className="mb-6 sm:mb-10">
             <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
               Hello There, I am <span className="text-[var(--accent)]">Kevin</span>, <br className="hidden sm:block" />
-              Full Stack Developer and <br className="hidden sm:block" />
-              Data Analyst
+              Full Stack Developer
             </h2>
             <p className="text-base sm:text-xl text-black/80 mb-2">
               I code beautifully elegant simple things and I love what I do.<br />
