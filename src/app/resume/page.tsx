@@ -12,6 +12,7 @@ import {
   Code,
   Folder,
   Mail,
+  LinkedIn,
 } from "@mui/icons-material";
 import { useState } from "react";
 
@@ -55,18 +56,48 @@ export default function Resume() {
           onClick={() => setNavOpen((open) => !open)}
           aria-label="Open navigation menu"
         >
-          <svg className="w-7 h-7 text-[var(--accent)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            className="w-7 h-7 text-[var(--accent)]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
       </nav>
       {/* Mobile nav drawer */}
       {navOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/60 z-50" onClick={() => setNavOpen(false)}>
-          <div className="absolute top-0 left-0 w-3/4 max-w-xs h-full bg-white rounded-r-2xl shadow-lg flex flex-col p-6 gap-6 animate-slide-in" onClick={e => e.stopPropagation()}>
-            <button className="self-end mb-4" onClick={() => setNavOpen(false)} aria-label="Close navigation menu">
-              <svg className="w-7 h-7 text-[var(--accent)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        <div
+          className="lg:hidden fixed inset-0 bg-black/60 z-50"
+          onClick={() => setNavOpen(false)}
+        >
+          <div
+            className="absolute top-0 left-0 w-3/4 max-w-xs h-full bg-white rounded-r-2xl shadow-lg flex flex-col p-6 gap-6 animate-slide-in"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="self-end mb-4"
+              onClick={() => setNavOpen(false)}
+              aria-label="Close navigation menu"
+            >
+              <svg
+                className="w-7 h-7 text-[var(--accent)]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
             <div className="flex flex-col gap-4 text-lg">{navLinks}</div>
@@ -84,26 +115,32 @@ export default function Resume() {
             className="rounded-xl object-cover mb-4 sm:mb-6 w-full max-w-[200px] sm:max-w-[250px]"
           />
           <h1 className="text-2xl sm:text-3xl font-bold mb-1">Mucyo Kevin</h1>
-          <p className="text-base sm:text-lg font-medium mb-4">Full Stack Developer</p>
+          <p className="text-base sm:text-lg font-medium mb-4">
+            Full Stack Developer
+          </p>
           <div className="flex flex-row gap-2 sm:gap-4">
             <div className="flex flex-row gap-2 sm:gap-4 mb-4">
               <a
                 href="https://github.com/MucyoKevin"
-                className="text-[var(--accent)]"
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
               >
                 <GitHub />
               </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Instagram />
-              </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Twitter />
+              <a
+                href="https://www.linkedin.com/in/mucyo-kevin-140503375"
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
+              >
+                <LinkedIn />
               </a>
             </div>
           </div>
           <div className="mb-2 text-xs sm:text-sm">mucyocyeve22@gmail.com</div>
-          <div className="mb-4 text-base sm:text-lg font-bold">Kigali, Rwanda</div>
-          <div className="text-xs mb-6">© 2023 Mucyo Kevin. All Right Reserved.</div>
+          <div className="mb-4 text-base sm:text-lg font-bold">
+            Kigali, Rwanda
+          </div>
+          <div className="text-xs mb-6">
+            © 2023 Mucyo Kevin. All Right Reserved.
+          </div>
           <Link href="/contact">
             <button className="w-full bg-[var(--accent)] text-white py-2 sm:py-3 rounded-lg flex items-center justify-center gap-2 font-semibold text-base sm:text-lg px-4 sm:px-6 hover:cursor-pointer">
               <Call /> Contact Me
@@ -118,7 +155,8 @@ export default function Resume() {
             </span>
           </div>
           <h2 className="text-2xl sm:text-5xl font-bold mb-4 sm:mb-12">
-            Education & <span className="text-[var(--accent)]">Certificates</span>
+            Education &{" "}
+            <span className="text-[var(--accent)]">Certificates</span>
           </h2>
           <div className="border-l-2 border-[var(--accent)] pl-4 sm:pl-8 mb-5">
             <div className="mb-12">

@@ -12,6 +12,7 @@ import {
   Code,
   Folder,
   Mail,
+  LinkedIn,
 } from "@mui/icons-material";
 import { useState } from "react";
 
@@ -55,18 +56,48 @@ export default function Home() {
           onClick={() => setNavOpen((open) => !open)}
           aria-label="Open navigation menu"
         >
-          <svg className="w-7 h-7 text-[var(--accent)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            className="w-7 h-7 text-[var(--accent)]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
       </nav>
       {/* Mobile nav drawer */}
       {navOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/60 z-50" onClick={() => setNavOpen(false)}>
-          <div className="absolute top-0 left-0 w-3/4 max-w-xs h-full bg-white rounded-r-2xl shadow-lg flex flex-col p-6 gap-6 animate-slide-in" onClick={e => e.stopPropagation()}>
-            <button className="self-end mb-4" onClick={() => setNavOpen(false)} aria-label="Close navigation menu">
-              <svg className="w-7 h-7 text-[var(--accent)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        <div
+          className="lg:hidden fixed inset-0 bg-black/60 z-50"
+          onClick={() => setNavOpen(false)}
+        >
+          <div
+            className="absolute top-0 left-0 w-3/4 max-w-xs h-full bg-white rounded-r-2xl shadow-lg flex flex-col p-6 gap-6 animate-slide-in"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="self-end mb-4"
+              onClick={() => setNavOpen(false)}
+              aria-label="Close navigation menu"
+            >
+              <svg
+                className="w-7 h-7 text-[var(--accent)]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
             <div className="flex flex-col gap-4 text-lg">{navLinks}</div>
@@ -77,42 +108,43 @@ export default function Home() {
         {/* Left Profile Card (hidden on mobile) */}
         <aside className="hidden lg:flex w-full max-w-xs bg-white/10 rounded-2xl m-2 sm:m-4 flex-col items-center p-6 sm:p-8 lg:p-10 shadow-lg">
           <Image
-              src="/profile3.JPG"
-              alt="Profile"
-              width={250}
-              height={250}
-              className="rounded-xl object-cover mb-4 sm:mb-6 w-full max-w-[200px] sm:max-w-[250px]"
-              priority
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "/profile.jpeg";
-              }}
-            />
+            src="/profile3.JPG"
+            alt="Profile"
+            width={250}
+            height={250}
+            className="rounded-xl object-cover mb-4 sm:mb-6 w-full max-w-[200px] sm:max-w-[250px]"
+            priority
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "/profile.jpeg";
+            }}
+          />
           <h1 className="text-2xl sm:text-3xl font-bold mb-1">Mucyo Kevin</h1>
-          <p className="text-base sm:text-lg font-medium mb-4">Full Stack Developer</p>
-          
+          <p className="text-base sm:text-lg font-medium mb-4">
+            Full Stack Developer
+          </p>
+
           <div className="flex flex-row gap-2 sm:gap-4">
-            
             <div className="flex flex-row gap-2 sm:gap-4 mb-4">
               <a
                 href="https://github.com/MucyoKevin"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-[var(--accent)] hover:scale-110 transition-transform"
               >
                 <GitHub />
               </a>
-              <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:scale-110 transition-transform">
-                <Instagram />
-              </a>
-              <a href="https://twitter.com/your_twitter_handle" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:scale-110 transition-transform">
-                <Twitter />
+              <a
+                href="https://www.linkedin.com/in/mucyo-kevin-140503375"
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
+              >
+                <LinkedIn />
               </a>
             </div>
             {/* <div className="border-l-2 border-[var(--accent)] h-24 mb-4"></div> */}
           </div>
           <div className="mb-2 text-xs sm:text-sm">mucyocyeve22@gmail.com</div>
-          <div className="mb-4 text-base sm:text-lg font-bold">Kigali, Rwanda</div>
+          <div className="mb-4 text-base sm:text-lg font-bold">
+            Kigali, Rwanda
+          </div>
           <div className="text-xs mb-6">
             © 2023 Mucyo Kevin. All Right Reserved.
           </div>
@@ -131,11 +163,14 @@ export default function Home() {
           </div>
           <div className="mb-6 sm:mb-10">
             <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
-              Hello There, I am <span className="text-[var(--accent)]">Kevin</span>, <br className="hidden sm:block" />
+              Hello There, I am{" "}
+              <span className="text-[var(--accent)]">Kevin</span>,{" "}
+              <br className="hidden sm:block" />
               Full Stack Developer
             </h2>
             <p className="text-base sm:text-xl text-black/80 mb-2">
-              I code beautifully elegant simple things and I love what I do.<br />
+              I code beautifully elegant simple things and I love what I do.
+              <br />
               Just keeping things simple like that!
             </p>
           </div>

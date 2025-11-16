@@ -12,17 +12,17 @@ import {
   Code,
   Folder,
   Mail,
+  LinkedIn,
 } from "@mui/icons-material";
 import { useState } from "react";
 
 const skills = [
-  
   { name: "JAVA SCRIPT", percent: 90, icon: "/js.svg" },
   { name: "PYTHON", percent: 90, icon: "/python.svg" },
+  { name: "DJANGO", percent: 90, icon: "/django.svg" },
   { name: "REACT", percent: 90, icon: "/react.svg" },
   { name: "HTML", percent: 90, icon: "/html-5.svg" },
-  { name: "DJANGO", percent: 70, icon: "/django.svg" },
-  { name: "GIT", percent: 70, icon: "/git.svg" },
+  { name: "GIT", percent: 80, icon: "/git.svg" },
   { name: "CSS", percent: 80, icon: "/css-3.svg" },
   { name: "C#", percent: 60, icon: "/csharp.svg" },
 ];
@@ -67,18 +67,48 @@ export default function Skills() {
           onClick={() => setNavOpen((open) => !open)}
           aria-label="Open navigation menu"
         >
-          <svg className="w-7 h-7 text-[var(--accent)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            className="w-7 h-7 text-[var(--accent)]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
       </nav>
       {/* Mobile nav drawer */}
       {navOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/60 z-50" onClick={() => setNavOpen(false)}>
-          <div className="absolute top-0 left-0 w-3/4 max-w-xs h-full bg-white rounded-r-2xl shadow-lg flex flex-col p-6 gap-6 animate-slide-in" onClick={e => e.stopPropagation()}>
-            <button className="self-end mb-4" onClick={() => setNavOpen(false)} aria-label="Close navigation menu">
-              <svg className="w-7 h-7 text-[var(--accent)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        <div
+          className="lg:hidden fixed inset-0 bg-black/60 z-50"
+          onClick={() => setNavOpen(false)}
+        >
+          <div
+            className="absolute top-0 left-0 w-3/4 max-w-xs h-full bg-white rounded-r-2xl shadow-lg flex flex-col p-6 gap-6 animate-slide-in"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="self-end mb-4"
+              onClick={() => setNavOpen(false)}
+              aria-label="Close navigation menu"
+            >
+              <svg
+                className="w-7 h-7 text-[var(--accent)]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
             <div className="flex flex-col gap-4 text-lg">{navLinks}</div>
@@ -96,23 +126,32 @@ export default function Skills() {
             className="rounded-xl object-cover mb-4 sm:mb-6 w-full max-w-[200px] sm:max-w-[250px]"
           />
           <h1 className="text-2xl sm:text-3xl font-bold mb-1">Mucyo Kevin</h1>
-          <p className="text-base sm:text-lg font-medium mb-4">Full Stack Developer</p>
+          <p className="text-base sm:text-lg font-medium mb-4">
+            Full Stack Developer
+          </p>
           <div className="flex flex-row gap-2 sm:gap-4">
             <div className="flex flex-row gap-2 sm:gap-4 mb-4">
-              <a href="https://github.com/MucyoKevin" className="text-[var(--accent)]">
+              <a
+                href="https://github.com/MucyoKevin"
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
+              >
                 <GitHub />
               </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Instagram />
-              </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Twitter />
+              <a
+                href="https://www.linkedin.com/in/mucyo-kevin-140503375"  
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
+              >
+                <LinkedIn />
               </a>
             </div>
           </div>
           <div className="mb-2 text-xs sm:text-sm">mucyocyeve22@gmail.com</div>
-          <div className="mb-4 text-base sm:text-lg font-bold">Kigali, Rwanda</div>
-          <div className="text-xs mb-6">© 2023 Mucyo Kevin. All Right Reserved.</div>
+          <div className="mb-4 text-base sm:text-lg font-bold">
+            Kigali, Rwanda
+          </div>
+          <div className="text-xs mb-6">
+            © 2023 Mucyo Kevin. All Right Reserved.
+          </div>
           <Link href="/contact">
             <button className="w-full bg-[var(--accent)] text-white py-2 sm:py-3 rounded-lg flex items-center justify-center gap-2 font-semibold text-base sm:text-lg px-4 sm:px-6 hover:cursor-pointer">
               <Call /> Contact Me
@@ -122,7 +161,9 @@ export default function Skills() {
         {/* Main Content */}
         <main className="flex-1 flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 lg:px-16 relative mt-6 lg:mt-0">
           <div className="mb-4 sm:mb-8">
-            <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">Skills</span>
+            <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
+              Skills
+            </span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-12">
             My <span className="text-[var(--accent)]">Advantages</span>
@@ -131,8 +172,15 @@ export default function Skills() {
             {skills.map((skill) => (
               <div key={skill.name} className="flex flex-col items-center">
                 <div className="w-28 h-28 rounded-full border-2 border-[var(--accent)] flex flex-col items-center justify-center mb-4">
-                  <Image src={skill.icon} alt={skill.name} width={48} height={48} />
-                  <div className="text-2xl font-bold text-[var(--accent)]">{skill.percent}%</div>
+                  <Image
+                    src={skill.icon}
+                    alt={skill.name}
+                    width={48}
+                    height={48}
+                  />
+                  <div className="text-2xl font-bold text-[var(--accent)]">
+                    {skill.percent}%
+                  </div>
                 </div>
                 <div className="text-lg font-semibold">{skill.name}</div>
               </div>
@@ -146,4 +194,4 @@ export default function Skills() {
       </div>
     </div>
   );
-} 
+}

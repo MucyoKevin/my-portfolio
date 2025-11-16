@@ -15,6 +15,7 @@ import {
   Mail,
   ArrowBackIosNew,
   ArrowForwardIos,
+  LinkedIn,
 } from "@mui/icons-material";
 
 import { FaGithub } from "react-icons/fa";
@@ -23,6 +24,14 @@ import { IoMdGlobe } from "react-icons/io";
 
 
 const projects = [
+  {
+    title: "File converter",
+    image: "/file_converter.PNG",
+    description: "A powerful, modern web application built with Django that converts files between multiple formats. Features real-time progress updates via WebSockets, asynchronous processing with Celery, and a beautiful, responsive UI.",
+    tags: ["Django", "Celery", "WebSockets"],
+    github: "https://github.com/MucyoKevin/file_converter.git",
+    // article: "https://medium.com/your-article1"
+  },
   {
     title: "Personal Finance Tracker",
     image: "/PersonalFinanceTracker.JPG",
@@ -152,17 +161,17 @@ export default function Projects() {
           <p className="text-base sm:text-lg font-medium mb-4">Full Stack Developer</p>
           <div className="flex flex-row gap-2 sm:gap-4">
             <div className="flex flex-row gap-2 sm:gap-4 mb-4">
-              <a
+            <a
                 href="https://github.com/MucyoKevin"
-                className="text-[var(--accent)]"
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
               >
                 <GitHub />
               </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Instagram />
-              </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Twitter />
+              <a
+                href="https://www.linkedin.com/in/mucyo-kevin-140503375"  
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
+              >
+                <LinkedIn />
               </a>
             </div>
           </div>

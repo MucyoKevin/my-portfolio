@@ -12,6 +12,7 @@ import {
   Code,
   Folder,
   Mail,
+  LinkedIn,
 } from "@mui/icons-material";
 import { useState } from "react";
 
@@ -87,14 +88,17 @@ export default function Contact() {
           <p className="text-base sm:text-lg font-medium mb-4">Full Stack Developer</p>
           <div className="flex flex-row gap-2 sm:gap-4">
             <div className="flex flex-row gap-2 sm:gap-4 mb-4">
-              <a href="https://github.com/MucyoKevin" className="text-[var(--accent)]">
+            <a
+                href="https://github.com/MucyoKevin"
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
+              >
                 <GitHub />
               </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Instagram />
-              </a>
-              <a href="#" className="text-[var(--accent)]">
-                <Twitter />
+              <a
+                href="https://www.linkedin.com/in/mucyo-kevin-140503375"  
+                className="text-[var(--accent)] hover:scale-110 transition-transform"
+              >
+                <LinkedIn />
               </a>
             </div>
           </div>
@@ -112,18 +116,15 @@ export default function Contact() {
           <div className="mb-4 sm:mb-8">
             <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">Contact</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-12">
+          <h2 className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-8">
             Let us Work <span className="text-[var(--accent)]">Together</span>
           </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-4 sm:mb-8 gap-2 sm:gap-0">
+          <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-2 sm:mb-8 gap-2 sm:gap-0">
             <div className="text-base sm:text-lg">mucyocyeve22@gmail.com</div>
             <div className="text-base sm:text-lg">+250 798 380 103</div>
           </div>
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 w-full max-w-full sm:max-w-4xl" action="mailto:mucyocyeve22@gmail.com" method="POST" encType="text/plain">
-            <div className="flex flex-col gap-2">
-              <label className="font-semibold">Full Name<span className="text-[var(--accent)]">*</span></label>
-              <input className="p-3 rounded bg-white/20 border border-[var(--accent)]" placeholder="Enter Your Name Here" name="Full Name" required autoComplete="name" />
-            </div>
+            
             <div className="flex flex-col gap-2">
               <label className="font-semibold">Email<span className="text-[var(--accent)]">*</span></label>
               <input className="p-3 rounded bg-white/20 border border-[var(--accent)]" placeholder="Enter Your Mail Here" name="Email" required type="email" autoComplete="email" />
