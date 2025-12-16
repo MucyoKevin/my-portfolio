@@ -2,10 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  Instagram,
   Call,
   GitHub,
-  Twitter,
   HomeFilled,
   Person,
   Description,
