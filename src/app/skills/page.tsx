@@ -19,6 +19,7 @@ const skills = [
   { name: "PYTHON", percent: 90, icon: "/python.svg" },
   { name: "DJANGO", percent: 90, icon: "/django.svg" },
   { name: "REACT", percent: 90, icon: "/react.svg" },
+  { name: "VUE.JS", percent: 90, icon: "/vue-96.svg" },
   { name: "HTML", percent: 90, icon: "/html-5.svg" },
   { name: "GIT", percent: 90, icon: "/git.svg" },
   { name: "CSS", percent: 80, icon: "/css-3.svg" },

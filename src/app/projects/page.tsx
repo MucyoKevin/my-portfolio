@@ -31,6 +31,14 @@ const projects = [
     // article: "https://medium.com/your-article1"
   },
   {
+    title: "Lumora landing page",
+    image: "/lumora.PNG",
+    description: "A landing page for a business that sells luxurious candles. It is built with React, Tailwind CSS, and Vue.js.",
+    tags: ["React", "Tailwind CSS", "Vue.js"],
+    github: "https://github.com/MucyoKevin/lumora-scents-landing-page",
+    website: "https://lumora-scents-landing-page.vercel.app/"
+  },
+  {
     title: "Personal Finance Tracker",
     image: "/PersonalFinanceTracker.JPG",
     description: "A web application for managing personal finances, built with ASP.NET Core and Entity Framework Core.",
