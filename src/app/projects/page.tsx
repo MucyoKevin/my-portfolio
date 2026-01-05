@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: "Lumora landing page",
-    image: "/lumora.PNG",
+    image: "/Lumora.PNG",
     description: "A landing page for a business that sells luxurious candles. It is built with React, Tailwind CSS, and Vue.js.",
     tags: ["React", "Tailwind CSS", "Vue.js"],
     github: "https://github.com/MucyoKevin/lumora-scents-landing-page",
