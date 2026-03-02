@@ -153,7 +153,23 @@ export default function Home() {
           </Link>
         </aside>
         {/* Main Content */}
-        <main className="flex-1 flex flex-col justify-center  items-start px-4 sm:px-8 md:px-12 lg:px-16 relative mt-6 lg:mt-0">
+        <main className="flex-1 flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 lg:px-16 relative mt-6 lg:mt-0">
+          {/* Compact profile section for mobile */}
+          <div className="lg:hidden w-full bg-white/10 rounded-2xl mb-6 flex items-center gap-4 p-4 shadow">
+            <Image
+              src="/profile3.JPG"
+              alt="Profile"
+              width={80}
+              height={80}
+              className="rounded-xl object-cover w-16 h-16"
+            />
+            <div>
+              <h1 className="text-lg font-bold">Mucyo Kevin</h1>
+              <p className="text-sm font-medium text-black/80">
+                Full Stack Developer
+              </p>
+            </div>
+          </div>
           <div className="mb-4 sm:mb-8">
             <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
               Introduction
