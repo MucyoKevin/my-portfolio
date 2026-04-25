@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
-
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
 
 const siteUrl = getSiteUrl();
 
@@ -77,7 +70,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${dmSans.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

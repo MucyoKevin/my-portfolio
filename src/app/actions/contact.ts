@@ -32,7 +32,7 @@ export async function sendContact(
     return {
       ok: false,
       message:
-        "Email delivery is not configured. Add RESEND_API_KEY, CONTACT_FROM_EMAIL, and CONTACT_TO_EMAIL to .env.local (see .env.example).",
+        "Email delivery is not configured. Set RESEND_API_KEY, CONTACT_FROM_EMAIL, and CONTACT_TO_EMAIL: use .env.local locally (see .env.example), or add the same variables in your host’s environment (e.g. Vercel → Project → Settings → Environment Variables), then redeploy.",
     };
   }
 
