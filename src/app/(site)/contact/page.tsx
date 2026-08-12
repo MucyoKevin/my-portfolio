@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { PageShell } from "@/components/site/PageShell";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <>
+    <PageShell>
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           Contact
@@ -39,6 +40,6 @@ export default function ContactPage() {
         </a>
       </div>
       <ContactForm />
-    </>
+    </PageShell>
   );
 }

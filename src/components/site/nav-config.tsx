@@ -6,6 +6,7 @@ import {
   Folder,
   Home,
   Mail,
+  Package,
   User,
 } from "lucide-react";
 
@@ -22,5 +23,11 @@ export const navItems: NavItem[] = [
   { href: "/experience", label: "Experience", Icon: Briefcase },
   { href: "/skills", label: "Skills", Icon: Code },
   { href: "/projects", label: "Projects", Icon: Folder },
+  { href: "/products", label: "Products", Icon: Package },
   { href: "/contact", label: "Contact", Icon: Mail },
 ];
+
+/** Home only matches exactly; every other route matches its subtree. */
+export function isActive(pathname: string, href: string) {
+  return href === "/" ? pathname === "/" : pathname.startsWith(href);
+}

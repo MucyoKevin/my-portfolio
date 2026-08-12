@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/motion/Reveal";
 import type { WorkExperience } from "@/data/work-experience";
 
 type Props = {
@@ -21,6 +22,7 @@ export function WorkExperienceSection({ entries }: Props) {
       <ol className="space-y-10 sm:space-y-12 list-none p-0 m-0">
         {entries.map((job) => (
           <li key={job.company}>
+            <Reveal>
             <h3 className="text-lg sm:text-xl font-bold text-black mb-2">
               {job.company}
             </h3>
@@ -43,6 +45,7 @@ export function WorkExperienceSection({ entries }: Props) {
                 request.
               </p>
             )}
+            </Reveal>
           </li>
         ))}
       </ol>

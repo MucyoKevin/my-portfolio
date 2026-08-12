@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/experience",
     "/skills",
     "/projects",
+    "/products",
     "/contact",
   ];
   return paths.map((path) => ({

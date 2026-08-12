@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageShell } from "@/components/site/PageShell";
 
 export const metadata: Metadata = {
   title: "Resume",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   return (
-    <>
+    <PageShell>
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           Resume
@@ -48,6 +49,6 @@ export default function ResumePage() {
           <div className="text-base mb-4">Coursera</div>
         </div>
       </div>
-    </>
+    </PageShell>
   );
 }

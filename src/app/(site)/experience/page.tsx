@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { WorkExperienceSection } from "@/components/experience/WorkExperienceSection";
+import { PageShell } from "@/components/site/PageShell";
 import { workExperience } from "@/data/work-experience";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function ExperiencePage() {
   return (
-    <>
+    <PageShell>
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           Experience
@@ -30,6 +31,6 @@ export default function ExperiencePage() {
         From current CTO roles back through data and IT internships 
       </p>
       <WorkExperienceSection entries={workExperience} />
-    </>
+    </PageShell>
   );
 }

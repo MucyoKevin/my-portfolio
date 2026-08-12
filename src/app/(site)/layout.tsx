@@ -5,14 +5,14 @@ import { Sidebar } from "@/components/site/Sidebar";
 
 export default function SiteLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="px-4 sm:px-8 md:px-16 lg:px-20 py-6 sm:py-8 md:py-10">
+    <div className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-10 xl:px-16 2xl:px-20 py-6 sm:py-8 lg:py-8 xl:py-10 lg:h-dvh lg:overflow-hidden print:h-auto print:overflow-visible">
       <MobileNavKeyed />
-      <div className="flex flex-col lg:flex-row min-h-screen bg-[var(--background)] text-black font-[var(--font-sans)] rounded-xl max-h-full lg:max-h-2/3">
+      <div className="flex flex-col lg:flex-row lg:flex-1 lg:min-h-0 bg-[var(--background)] text-[var(--foreground)] rounded-xl lg:overflow-hidden">
         <Sidebar />
-        <div className="flex-1 flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 lg:px-16 relative mt-6 lg:mt-0 min-w-0 w-full pb-28 lg:pb-32">
+        <main className="relative flex flex-col flex-1 min-w-0 lg:min-h-0 mt-6 lg:mt-0">
           {children}
           <DesktopNav />
-        </div>
+        </main>
       </div>
     </div>
   );

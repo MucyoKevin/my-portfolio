@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageShell } from "@/components/site/PageShell";
 
 export const metadata: Metadata = {
   title: "About",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <>
+    <PageShell>
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           About
@@ -37,6 +38,6 @@ export default function AboutPage() {
           innovation.
         </p>
       </div>
-    </>
+    </PageShell>
   );
 }

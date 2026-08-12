@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionProvider } from "@/components/motion/MotionProvider";
 import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -70,6 +71,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Motion renders its `initial` state as inline opacity:0 during SSR.
+            Without JS those elements would never animate in, so the page would
+            render blank. Reveal everything if scripting is unavailable. */}
+        <noscript>
+          <style>{`[style*="opacity:0"]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+      </head>
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"
@@ -77,7 +86,7 @@ export default function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
-        {children}
+        <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
   );
