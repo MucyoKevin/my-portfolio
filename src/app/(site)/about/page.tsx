@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageShell } from "@/components/site/PageShell";
+import { pageGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About",
@@ -17,6 +19,16 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <PageShell>
+      <JsonLd
+        data={pageGraph({
+          path: "/about",
+          label: "About",
+          type: "AboutPage",
+          name: "About Mucyo Kevin",
+          description:
+            "Background in telecommunication and information engineering, and full stack experience across embedded systems, APIs, and cloud.",
+        })}
+      />
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           About

@@ -19,7 +19,7 @@ export function ProfileImage({ className, width, height, priority }: Props) {
   return (
     <Image
       src={src}
-      alt="Mucyo Kevin"
+      alt="Mucyo Kevin, full stack developer based in Kigali, Rwanda"
       width={width}
       height={height}
       className={className}

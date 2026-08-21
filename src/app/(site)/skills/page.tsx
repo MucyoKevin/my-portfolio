@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageShell } from "@/components/site/PageShell";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
+import { pageGraph } from "@/lib/schema";
 
 const skills = [
   { name: "JavaScript", icon: "/js.svg" },
@@ -29,6 +31,15 @@ export const metadata: Metadata = {
 export default function SkillsPage() {
   return (
     <PageShell>
+      <JsonLd
+        data={pageGraph({
+          path: "/skills",
+          label: "Skills",
+          name: "Skills — Mucyo Kevin",
+          description:
+            "JavaScript, Python, Django, React, Vue, HTML, CSS and Git — the tools behind the full stack products on this site.",
+        })}
+      />
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           Skills

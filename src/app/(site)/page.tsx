@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { MobileProfileCard } from "@/components/site/MobileProfileCard";
 import { PageShell } from "@/components/site/PageShell";
 import { StaggerOnMount, StaggerItem } from "@/components/motion/Stagger";
+import { pageGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "Mucyo Kevin | Full Stack Developer" },
+  title: { absolute: "Mucyo Kevin | Full Stack Developer in Kigali, Rwanda" },
   description:
-    "Mucyo Kevin — full stack developer in Kigali. JavaScript, Python, cloud, and clean architecture.",
+    "Mucyo Kevin — full stack developer in Kigali, Rwanda. JavaScript, Python, C#, REST APIs, cloud-native delivery, and clean architecture.",
   alternates: { canonical: "/" },
   openGraph: {
+    // The home page is the person, so it gets the richer Open Graph type;
+    // every other page stays a plain website.
+    type: "profile",
+    firstName: "Kevin",
+    lastName: "Mucyo",
+    username: "MucyoKevin",
     title: "Mucyo Kevin | Full Stack Developer",
     description:
       "Portfolio of Mucyo Kevin — full stack developer building elegant, simple software.",
@@ -21,6 +29,16 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <PageShell center>
+      <JsonLd
+        data={pageGraph({
+          path: "/",
+          label: "Home",
+          type: "ProfilePage",
+          name: "Mucyo Kevin — Full Stack Developer",
+          description:
+            "Portfolio of Mucyo Kevin, a full stack developer in Kigali, Rwanda.",
+        })}
+      />
       <MobileProfileCard />
 
       <StaggerOnMount className="flex w-full flex-col items-center">

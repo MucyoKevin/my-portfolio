@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageShell } from "@/components/site/PageShell";
+import { pageGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -17,6 +19,16 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <PageShell>
+      <JsonLd
+        data={pageGraph({
+          path: "/contact",
+          label: "Contact",
+          type: "ContactPage",
+          name: "Contact Mucyo Kevin",
+          description:
+            "Get in touch about freelance work, full-time roles, or collaboration — Kigali and remote.",
+        })}
+      />
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           Contact

@@ -3,7 +3,9 @@ import { PageShell } from "@/components/site/PageShell";
 import { Reveal } from "@/components/motion/Reveal";
 import { ProductFeatureCard } from "@/components/products/ProductCard";
 import { ProductGrid } from "@/components/products/ProductGrid";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { currentProducts, shippedProducts } from "@/data/products";
+import { pageGraph, productsListNode } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Products",
@@ -41,6 +43,19 @@ function SectionHeading({
 export default function ProductsPage() {
   return (
     <PageShell>
+      <JsonLd
+        data={pageGraph(
+          {
+            path: "/products",
+            label: "Products",
+            type: "CollectionPage",
+            name: "Products — Mucyo Kevin",
+            description:
+              "Live commercial platforms built and led by Mucyo Kevin: StroomUp, GC Builds, Ijambo and Agaseke Store.",
+          },
+          [productsListNode()],
+        )}
+      />
       <div className="mb-4 sm:mb-6">
         <span className="rounded-full border border-[var(--accent-2)] px-3 py-1 text-xs font-medium text-[var(--accent-2-ink)] sm:px-4 sm:text-sm">
           Products

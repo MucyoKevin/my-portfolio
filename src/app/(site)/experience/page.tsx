@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { WorkExperienceSection } from "@/components/experience/WorkExperienceSection";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageShell } from "@/components/site/PageShell";
 import { workExperience } from "@/data/work-experience";
+import { experienceListNode, pageGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Work experience",
@@ -19,6 +21,18 @@ export const metadata: Metadata = {
 export default function ExperiencePage() {
   return (
     <PageShell>
+      <JsonLd
+        data={pageGraph(
+          {
+            path: "/experience",
+            label: "Experience",
+            name: "Work experience — Mucyo Kevin",
+            description:
+              "CTO at GC Technologies and StroomUp, after data analysis and IT operations internships at MTN Rwanda and Rwanda Airport Company.",
+          },
+          [experienceListNode()],
+        )}
+      />
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           Experience

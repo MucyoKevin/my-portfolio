@@ -1,22 +1,18 @@
 import type { MetadataRoute } from "next";
-import { getSiteUrl } from "@/lib/site";
+import { siteRoutes } from "@/lib/routes";
+import { absoluteUrl } from "@/lib/site";
 
+/**
+ * Dates, priorities and image references come from `src/lib/routes.ts` so the
+ * sitemap, the breadcrumbs and the social cards all describe the same set of
+ * pages. Add a route there and it appears here automatically.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = getSiteUrl();
-  const paths = [
-    "",
-    "/about",
-    "/resume",
-    "/experience",
-    "/skills",
-    "/projects",
-    "/products",
-    "/contact",
-  ];
-  return paths.map((path) => ({
-    url: `${base}${path || "/"}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: path === "" ? 1 : 0.8,
+  return siteRoutes.map((route) => ({
+    url: absoluteUrl(route.path),
+    lastModified: new Date(route.lastModified),
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
+    ...(route.image ? { images: [absoluteUrl(route.image)] } : {}),
   }));
 }

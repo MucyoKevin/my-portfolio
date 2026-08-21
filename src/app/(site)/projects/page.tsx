@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectCarousel } from "@/components/projects/ProjectCarousel";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageShell } from "@/components/site/PageShell";
 import { projects } from "@/data/projects";
+import { pageGraph, projectsListNode } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -19,6 +21,19 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <PageShell>
+      <JsonLd
+        data={pageGraph(
+          {
+            path: "/projects",
+            label: "Projects",
+            type: "CollectionPage",
+            name: "Projects — Mucyo Kevin",
+            description:
+              "Featured work: full stack apps, data pipelines, analytics, and landing pages, with links to code and write-ups.",
+          },
+          [projectsListNode()],
+        )}
+      />
       <div className="mb-4 sm:mb-8">
         <span className="px-3 sm:px-4 py-1 rounded-full border border-[var(--accent)] text-[var(--accent)] font-medium text-xs sm:text-sm">
           Projects
