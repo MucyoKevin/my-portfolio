@@ -42,8 +42,7 @@ export default function AboutPage() {
           and full stack development.
         </p>
         <p className="mb-4">
-          Proficient in JavaScript (Node.js, Express.js, React, Next.js), Python
-          (Django/Flask), C# (.NET), and SQL/NoSQL databases. Skilled in
+          Proficient in Python (Django) , JavaScript (Node.js, Express.js, React, Next.js), C# (.NET), and SQL/NoSQL databases. Skilled in
           designing RESTful APIs, optimizing frontend performance, and deploying
           cloud-native solutions. Passionate about clean architecture, UX-driven
           development, and solving business problems through full stack
