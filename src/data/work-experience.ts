@@ -8,8 +8,8 @@ export type WorkExperience = {
 export const workExperience: WorkExperience[] = [
   {
     company: "GC Technologies",
-    role: "Chief Technology Officer (CTO)",
-    period: "October 2025 – Present",
+    role: "Full-Stack Developer",
+    period: " 2025 – 2026",
     highlights: [
       "Defined and executed the overall technology strategy and architecture for GC Builds, a construction and project management platform, leading development from concept to production.",
       "Oversaw the design and scaling of backend infrastructure to support project tracking, task management, and team collaboration across complex construction workflows.",
@@ -21,9 +21,9 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    company: "StroomUp",
-    role: "Chief Technology Officer (CTO)",
-    period: "June 2025 – Present",
+    company: "ViaStroom",
+    role: "Full-Stack Developer",
+    period: " 2025 – 2026",
     highlights: [
       "Defined and executed the overall technology strategy and architecture for a social media platform, overseeing development of scalable backend infrastructure using Django to support real-time interactions and content management.",
       "Directed the implementation of comprehensive user authentication and authorization systems, ensuring secure API endpoints for seamless mobile and web integration.",
@@ -40,10 +40,21 @@ export const workExperience: WorkExperience[] = [
     highlights: [
       "Developed and deployed a Grafana-based dashboard for visualizing real-time data from MTN Rwanda's network operations.",
       "Integrated data sources and configured Grafana to surface critical metrics including network performance, uptime, and error rates.",
-      "Collaborated with the data engineering team to keep pipelines accurate and to build custom visualizations tailored to operations needs.",
       "Delivered actionable insights through data visualization to support decision-making and operational efficiency.",
       "Implemented a dynamic, user-friendly dashboard that improved monitoring efficiency for the operations team.",
-      "Reduced troubleshooting time by presenting clear visual representations of network health and performance.",
+      "Established security protocols including JWT tokens, password hashing, and role-based access control (RBAC), governing permissions across the platform.",
+    ],
+  },
+  {
+    company: "Mozzi",
+    role: "Full-Stack Developer",
+    period: "February 2023 – November 2024",
+    highlights: [
+      "Developed and deployed a staff admin dashboard for accepting and recordinh real-time orders from clients allover the city.",
+      "Oversaw the design and scaling of backend infrastructure to support project tracking, task management, and team collaboration across complex construction workflows.",
+      "Architected RESTful APIs to power core features including user profiles, orders,real-time notifications, and streaming functionalities.",
+      "Delivered actionable insights through data visualization to support decision-making and operational efficiency.",
+      "Implemented a dynamic, user-friendly dashboard that improved monitoring efficiency for the operations team.",
     ],
   },
   {
