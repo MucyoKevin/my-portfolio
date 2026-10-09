@@ -6,13 +6,13 @@ import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 import { pageGraph } from "@/lib/schema";
 
 const skills = [
-  { name: "JavaScript", icon: "/js.svg" },
-  { name: "Python", icon: "/python.svg" },
   { name: "Django", icon: "/django.svg" },
+  { name: "Python", icon: "/python.svg" },
+  { name: "JavaScript", icon: "/js.svg" },
   { name: "React", icon: "/react.svg" },
+  { name: "Git", icon: "/git.svg" },
   { name: "Vue.js", icon: "/vue-96.svg" },
   { name: "HTML", icon: "/html-5.svg" },
-  { name: "Git", icon: "/git.svg" },
   { name: "CSS", icon: "/css-3.svg" }
 ];
 
