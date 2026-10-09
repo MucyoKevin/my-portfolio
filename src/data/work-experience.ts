@@ -50,9 +50,9 @@ export const workExperience: WorkExperience[] = [
     role: "Full-Stack Developer",
     period: "February 2023 – November 2024",
     highlights: [
-      "Developed and deployed a staff admin dashboard for accepting and recordinh real-time orders from clients allover the city.",
+      "Developed and deployed a staff admin dashboard for accepting and recording real-time orders from clients allover the city.",
       "Oversaw the design and scaling of backend infrastructure to support project tracking, task management, and team collaboration across complex construction workflows.",
-      "Architected RESTful APIs to power core features including user profiles, orders,real-time notifications, and streaming functionalities.",
+      "Architected RESTful APIs to power core features including user profiles, orders,real-time notifications, and payment functionalities.",
       "Delivered actionable insights through data visualization to support decision-making and operational efficiency.",
       "Implemented a dynamic, user-friendly dashboard that improved monitoring efficiency for the operations team.",
     ],
