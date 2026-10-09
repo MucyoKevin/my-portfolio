@@ -34,6 +34,19 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
+    company: "Ijambo Ltd",
+    role: "Full-Stack Developer",
+    period: "Jan 2024 - May 2025",
+    highlights: [
+      "Defined and executed the overall technology strategy and architecture for a word games platform, overseeing development of scalable backend infrastructure using Django to support real-time interactions and content management.",
+      "Directed the implementation of comprehensive user authentication and authorization systems, ensuring secure API endpoints for seamless mobile and web integration.",
+      "Led the development of the Three top games from initial drafts to production level.",
+      "Architected RESTful APIs to power core user features including user profiles, game leaderboardals, real-time notifications, and staff admin functionalities.",
+      "Established security protocols including JWT tokens, password hashing, and role-based access control (RBAC), governing permissions across the platform.",
+      "Drove technical decision-making and established engineering best practices, overseeing the complete backend architecture from conception to production-ready state.",
+    ],
+  },
+  {
     company: "MTN Rwanda",
     role: "Data Analysis Intern",
     period: "March 2023 – May 2023",
